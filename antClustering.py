@@ -32,6 +32,16 @@ def signal_handler(signal, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 
+'''
+Catches ctrl z
+'''
+def handler(signum, frame):
+	cv2.destroyAllWindows()
+	sys.exit(0)
+
+signal.signal(signal.SIGTSTP, handler)
+
+
 
 class Environment:
 	def initAntLoc():
@@ -108,7 +118,7 @@ def showRoom(image, name, wait):
 		cv2.imshow(name,image)
 		k = cv2.waitKey(0)
 	else:
-		cv2.imshow("",image)
+		cv2.imshow(name,image)
 		k = cv2.waitKey(1)
 
 	if t % 1000 == 0 and t > 0:
@@ -537,15 +547,21 @@ cv2.imwrite(dirName + name,image)
 #showRoom(image,name,1)
 colony = makeColony(room)
 
-while True:
-#for x in range(1000):
+#cv2.namedWindow('Ant Clustering Simulation', 0)
+image = paintImage(room, colony, 3,1)
+showRoom(image,'Ant Clustering Simulation',0)
+k = cv2.waitKey(1)
+
+#while True:
+while cv2.getWindowProperty('Ant Clustering Simulation', 1) == 1:
 	colony = moveAnts(room, colony)
 	image = paintImage(room, colony, 3,1)
-	showRoom(image,name,0)
+	showRoom(image,'Ant Clustering Simulation',0)
 	t = t + 1
 
+cv2.destroyAllWindows()
 name = "Run ID: " + str(runId) + " Final image " + " " + str(t) + " iterations" + ext
-image = paintImage(room, colony, 3,0)
+image = paintImage(room, colony, 3, 0)
 showRoom(image,name,1)
 saveRunId(runId)
 cv2.imwrite(dirName + name,image)
