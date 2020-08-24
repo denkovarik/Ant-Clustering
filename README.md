@@ -9,8 +9,8 @@ Algorithm.
 
 Ant Clustering Algorithms is a swarm intelligent method on clustering objects
 by their similarity to each other, and it was inspired by ant colonies found 
-in nature. The idea is that you have a bunch of agents
-"ants" that act in simple predefined ways, but when these agents interact in 
+in nature. The idea is that you have a bunch of agents (called ants) that act 
+in simple predefined ways, but when these agents interact in 
 withing a large group, intelligent behavior emerges that can allow the whole
 to solve complex problems.  
 
