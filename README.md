@@ -31,20 +31,24 @@ purposes.
 
 
 ## Installation
-Note that these projects were developed and tested in Ubuntu on the command
-line.
+This project was developed and tested in Ubuntu on the command line. This guide 
+assumes the user is working in Ubuntu on the command line
 
 ### Required Software
-* g++
-   * Linux C++ Compiler 
-* freeglut3-dev
-   * OpenGL - Development libraries
-* SOIL
-   * Image processing package
-* make
-   * Linux compiler script manager
-* gdb
-   * Linux debugger
+* Python 3
+   * PIL
+   * OpenCV 2
+   * math
+   * numpy
+   * random
+   * time
+   * sys
+   * signal
+   * os
+   * threading
+   * builtins
+    * IOError
+
 
 ### Optional Software for Windows Users
 * Xming
