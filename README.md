@@ -10,23 +10,23 @@ Algorithm.
 Ant Clustering Algorithms is a swarm intelligent method on clustering objects
 by their similarity to each other, and it was inspired by ant colonies found 
 in nature. The idea is that you have a bunch of agents (called ants) that act 
-in simple predefined ways, but when these agents interact in 
-withing a large group, intelligent behavior emerges that can allow the whole
+in simple predefined ways, but when these agents interact withing a large 
+group, then intelligent behavior emerges that can allow the whole
 to solve complex problems.  
 
-In this program, there is a room with a bunch of red and blue objects scattered
-around, and the ant colony is tasked with grouping each object by it's color. 
+In this program there is a room with a bunch of red and blue objects scattered
+around randomly. The ant colony is tasked with grouping each object by it's color. 
 Each ant simply moves around the room randomly. When an ant comes across an
-object and is more unlike the other objects around it, the it has a higher 
-probability of picking it up than if the object was around other objects that
-were like it. At the same time, if an ant is carrying an object and the ant is
-around other objects like the object it is carrying, then it has a higher 
-probability of dropping the object than if it was around other objects that
-where more unlike the object it was carrying. Through these simple behavoirs, 
-the ant colony is able to group the objects by color relatively well over time.
+object that is more unlike the other objects around it, then the ant has a higher 
+probability of picking up the object than if the object was around other objects 
+similar to it. At the same time, if an ant is carrying an object that is like the 
+objects currently around the ant carrying it, then the ant has a higher 
+probability of dropping the object than if the ant was around other objects that
+where unlike it. Through these simple behavoirs, the ant colony is able to group 
+the objects by color relatively well over time.
 
-This project has been adapted from the CSC 349 Natural Computing course 
-at The South Dakota School of Mines and Technology for educational 
+This project has been adapted from a project created for the CSC 349 Natural 
+Computing course at The South Dakota School of Mines and Technology for educational 
 purposes. 
 
 
