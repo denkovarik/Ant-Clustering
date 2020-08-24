@@ -36,23 +36,23 @@ assumes the user is working in Ubuntu on the command line
 
 ### Required Software
 * Python 3
-   * PIL
    * OpenCV 2
-   * math
-   * numpy
-   * random
-   * time
-   * sys
-   * signal
-   * os
-   * threading
-   * builtins
-    * IOError
+   * Python NumPy module
+   * Python random module
+   * Python time module
+   * Python sys module
+   * Python signal module
+   * Python os module
+   * Python threading module
 
-
-### Optional Software for Windows Users
+### Optional Software for Windows Users running Windows Subsystem for Linux (Ubuntu)
 * Xming
    * X-server package for displaying platform on windows
+   * Note that if you get a error like "(Ant Clustering Simulation:34): 
+   Gtk-WARNING **: 21:14:58.430: cannot open display: " when trying to run the program, 
+   then make sure Xming is running and then try typing the following command into the 
+   shell: "export DISPLAY=:0.0".
+   
    
 ### Clone the repository
 * Clone with SSH
