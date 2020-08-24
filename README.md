@@ -56,31 +56,14 @@ assumes the user is working in Ubuntu on the command line
    
 ### Clone the repository
 * Clone with SSH
-  * git clone git@github.com:denkovarik/Battle-Tanks.git
+  * git clone git@github.com:denkovarik/Ant-Clustering.git
 * Clone with HTTPS
-  * git clone https://github.com/denkovarik/Battle-Tanks.git
-    
-### Build the Project
-* make
+  * git clone https://github.com/denkovarik/Ant-Clustering.git
   
 ## Usage
 * This command will start a set of example runs for demonstration
-  * ./start
-    
-* Alternatively, you can start a single run by typing the following
-  * ./projectx/platform
-    
-* You can modify the map the platform runs by modifying the projectx configuration file 'config.txt'. This file is located in the 'projectx' directory. 
-* To have your tank run on the platform, it must be compiled as a .so file and located in the 'projectx/tanks' directory. In addition, you must add the name of your tank to config.txt for itto be loaded onto the platform. An example config file can be found in the projectx directory as a file named 'config.sample'.
+  * python3 antClustering.py
 
 ## Credits
-* Squad7++ 
-  * Dennis Kovarik
-  * Samuel Backes
-  * Adeshkumar Naik
-  
-* Projectx Platform
-  * Jon McKee
-  * Riley Kopp
-  * Levi Butts
-  * JD Pessoa 
+* Dennis Kovarik
+
