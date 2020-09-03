@@ -35,6 +35,7 @@ This project was developed and tested in Ubuntu on the command line. This guide
 assumes the user is working in Ubuntu on the command line
 
 ### Required Software
+* Git
 * Python 3
    * OpenCV 2
    * Python NumPy module
