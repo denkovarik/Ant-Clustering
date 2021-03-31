@@ -63,7 +63,9 @@ assumes the user is working in Ubuntu on the command line
   
 ## Usage
 * This command will start a set of example runs for demonstration
-  * python3 antClustering.py
+```
+python3 antClustering.py
+```
 
 ## Credits
 * Dennis Kovarik
