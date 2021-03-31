@@ -62,7 +62,7 @@ assumes the user is working in Ubuntu on the command line
   * git clone https://github.com/denkovarik/Ant-Clustering.git
   
 ## Usage
-* This command will start a set of example runs for demonstration
+This command will start a set of example runs for demonstration
 ```
 python3 antClustering.py
 ```
